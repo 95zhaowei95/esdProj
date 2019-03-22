@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!-- Created with Liquid Studio 2018 (https://www.liquid-technologies.com) -->
+<Customer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\ESD\Labs\XML\customers.xsd">
+    <id>Ford</id>
+    <datetime>Henry</datetime>
+    <bmi>Henry</bmi>
+    <weight>Henry</weight>
+    <height>Henry</height>
+
+
+
+
+</Customer>
