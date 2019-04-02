@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_f50m8FT_EemoJpxV_8mEfQ" targetNamespace="http://tns.tibco.com/bw/composite/Notifications.module" name="Notifications.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_Y1sncVUAEem95uJzXPKnwQ" name="notifications" promote="ComponentProcess/notifications">
+    <sca:interface.wsdl xmi:id="_Y1sndVUAEem95uJzXPKnwQ" interface="http://xmlns.example.com/20190402115634PLT#wsdl.interface(notifications1)" scaext:wsdlLocation="../Processes/notifications/module/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_Y12YcFUAEem95uJzXPKnwQ" name="RestService" path="/notifications" docBasePath="http://localhost:7777/Notifications.module" docResourcePath="Notifications" basePath="/" connector="notifications.module.Notifications" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/notifications.module.Process-Notifications.json">
+      <operation xmi:id="_Y12YclUAEem95uJzXPKnwQ" operationName="get" nickname="get-notifications" httpMethod="GET" responseStyle="array" requestStyle="array">
+        <parameters xmi:id="_oPHMAFUBEemKIObu3ptoIQ">
+          <parameterMapping xmi:id="_oPHMAVUBEemKIObu3ptoIQ" parameterName="Email" parameterType="Query" dataType="string" required="true"/>
+          <parameterMapping xmi:id="_ysnFoFUBEemKIObu3ptoIQ" parameterName="Food_Recommendation" parameterType="Query" dataType="string"/>
+        </parameters>
+        <responseStatus xmi:id="_vVuCUFUBEemKIObu3ptoIQ" statusCode="201" reasonPhrase="Created" dataType="string"/>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_Y12YdFUAEem95uJzXPKnwQ"/>
+      <advancedConfig xmi:id="_Y12YcVUAEem95uJzXPKnwQ" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_Y12Yc1UAEem95uJzXPKnwQ" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_gDECgFT_EemoJpxV_8mEfQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_gDECgVT_EemoJpxV_8mEfQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_gDNMcFT_EemoJpxV_8mEfQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_gDNMcVT_EemoJpxV_8mEfQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_gDNMclT_EemoJpxV_8mEfQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_gDNMc1T_EemoJpxV_8mEfQ" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_gDNMdFT_EemoJpxV_8mEfQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_f9jQYFT_EemoJpxV_8mEfQ" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_f9jQYVT_EemoJpxV_8mEfQ" processName="notifications.module.Process"/>
+    <sca:service xmi:id="_Y1i2cFUAEem95uJzXPKnwQ" name="notifications">
+      <sca:interface.wsdl xmi:id="_Y1sncFUAEem95uJzXPKnwQ" interface="http://xmlns.example.com/20190402115634PLT#wsdl.interface(notifications1)" scaext:wsdlLocation="../Processes/notifications/module/Process.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

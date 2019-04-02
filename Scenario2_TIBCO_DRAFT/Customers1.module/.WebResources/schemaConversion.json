@@ -1,0 +1,5 @@
+{"records": [{
+    "jsonSchemaLocation": "/Customers1.module/Service Descriptors/customers1.module.Process-Customers.json",
+    "conversionType": "linked",
+    "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1554178953930"
+}]}

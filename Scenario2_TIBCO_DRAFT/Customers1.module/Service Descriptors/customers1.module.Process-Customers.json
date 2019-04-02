@@ -1,0 +1,54 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Customers Service",
+    "description" : "Customers Service"
+  },
+  "host" : "localhost:8082",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/customer/{Customer_ID}" : {
+      "get" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "get-customer",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "Customer_ID",
+          "in" : "path",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a CustomersElement to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/CustomersElement"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "CustomersElement" : {
+      "type" : "object",
+      "required" : [ "Email", "Customer_ID", "Name" ],
+      "properties" : {
+        "Customer_ID" : {
+          "type" : "integer"
+        },
+        "Name" : {
+          "type" : "string"
+        },
+        "Email" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

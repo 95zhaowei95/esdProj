@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:smtp="http://xsd.tns.tibco.com/bw/models/sharedresource/smtp" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_E05j4VUGEempa5wessh3nA" name="notifications.module.SMTPResource" type="smtp:SmtpConfiguration">
+  <jndi:reference xmi:id="_E2uv4FUGEempa5wessh3nA" key="identityJNDIName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="smtp:SmtpConfiguration" xmi:id="_E2uv4VUGEempa5wessh3nA">
+    <tcpDetails xmi:id="_E2vW8FUGEempa5wessh3nA" host="mail.smtp2go.com" port="25" connectionTimeout="60000"/>
+    <userCredentials xmi:id="_E2vW8VUGEempa5wessh3nA" username="shuhui.tan.2017@smu.edu.sg" password="#!921wdXj45dXYre4+NYKJkKXmQ7OiVw80cbqJqMfoBcnZcRsHGyFJzA=="/>
+  </jndi:configuration>
+</jndi:namedResource>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tns.tibco.com/bw/json/1554177439020" elementFormDefault="qualified" targetNamespace="http://tns.tibco.com/bw/json/1554177439020">
+  <complexType name="NotificationsElementType">
+    <sequence>
+      <element maxOccurs="1" minOccurs="0" name="Customer_ID" type="integer"/>
+      <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+      <element maxOccurs="1" minOccurs="1" name="Email" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="Food_Recommendation" type="string"/>
+    </sequence>
+  </complexType>
+  <element name="NotificationsElement" type="tns:NotificationsElementType"/>
+  <complexType name="NotificationsElementArrayType">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" ref="tns:NotificationsElement"/>
+    </sequence>
+  </complexType>
+  <element name="NotificationsElementArray" type="tns:NotificationsElementArrayType"/>
+</schema>

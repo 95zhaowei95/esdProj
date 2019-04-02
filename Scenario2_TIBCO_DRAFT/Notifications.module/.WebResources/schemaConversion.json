@@ -1,0 +1,5 @@
+{"records": [{
+    "jsonSchemaLocation": "/Notifications.module/Service Descriptors/notifications.module.Process-Notifications.json",
+    "conversionType": "linked",
+    "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1554177439020"
+}]}
